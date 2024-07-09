@@ -1,0 +1,117 @@
+/* GOOGLE FONT | INTER */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    /* Primary Colors */
+    --Green: hsl(75, 94%, 57%);
+
+    /* Neutral Colors */
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 20%);
+    --Dark-Grey: hsl(0, 0%, 12%);
+    --Off-Black: hsl(0, 0%, 8%);
+
+    /* Typography */
+    --font-Inter: 'Inter', sans-serif;
+    --Font-size-p: 14px; /* Paragraph */
+}
+
+body {
+    background-color: var(--Off-Black);
+    color: var(--White);
+    font-family: var(--font-Inter), serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+    min-height: 100vh; /* Ensure it takes at least the full height of the viewport */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem;
+    background-color: var(--Dark-Grey);
+    border-radius: 34px;
+    width: 100%;
+    max-width: 325px;
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.profile-pic {
+    max-width: 8rem;
+    border-radius: 50%;
+}
+
+.profile-name {
+    font-weight: 700;
+    font-size: 2rem;
+    margin: 0.5rem 0; /* Added margin for spacing */
+}
+
+.location {
+    font-weight: 600;
+    color: var(--Green);
+    font-size: 1rem;
+    margin-bottom: 1rem; /* Added margin for spacing */
+}
+
+.bio {
+    font-size: 0.9rem;
+}
+
+.btn {
+    width: 20rem;
+    padding: 1rem;
+    background-color: var(--Grey);
+    color: var(--White);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.btn:hover {
+    background-color: var(--Green);
+    color: var(--Dark-Grey);
+}
+
+
+@media (max-width: 468px) {
+    .btn {
+        width: 15rem;
+        font-weight: 700;
+    }
+
+}
+
+
+@media (max-width: 368px) {
+    .btn {
+        width: 12rem;
+    }
+
+
+}
